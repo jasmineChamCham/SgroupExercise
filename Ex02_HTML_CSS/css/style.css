@@ -1,0 +1,151 @@
+body {
+    margin: auto;
+    width: 35vw;
+    padding: 20px;
+    border: 2px inset;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.squareJ{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center; /* horizontal align (in this case) */
+    align-items: center; /* vertical align (in this case) */
+}
+
+.icon{
+    height: 50px;
+    width: 70px;
+    display: flex;
+    align-items: center; /* vertical align (in this case) */
+    justify-content: space-evenly;
+    padding-left: -10px;
+    padding-right: -10px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;
+}
+
+#hi{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: grey;
+    padding-top: 20px;
+}
+
+#nameIntro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.statistics{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.numbers{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: #F89880;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.details{
+    font-family: 'Montserrat', sans-serif;
+    color: darkgrey;
+    font-size: 17px;
+}
+
+.aboutme{
+    width: fit-content;
+    block-size: fit-content;
+    border-style: none none solid none;
+    border-color: #F89880 ;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding-top: 30px;
+}
+
+.introduction{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+
+.dark{
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.touch{
+    color: grey;
+    font-size: 20px;
+    padding-top: 70px;
+}
+
+.talk{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.letstalk{
+    font-family: 'Work Sans', sans-serif;
+    font-size: large;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #F89880;
+    border-radius: 10px;
+    color: #F89880;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.copyright{
+    color: grey;
+    font-size: 15px;
+    padding-bottom: 70px;
+}
