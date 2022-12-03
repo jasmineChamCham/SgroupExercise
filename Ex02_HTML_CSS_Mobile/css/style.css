@@ -13,7 +13,7 @@ body {
     margin-bottom: 10px;
 }
 
-.squareJ{
+.header__squareJ{
     background-color: black;
     height: 50px;
     width: 50px;
@@ -26,7 +26,12 @@ body {
     align-items: center; /* vertical align (in this case) */
 }
 
-.icon{
+.fa-brands{
+    background-color: white ;
+    color: #F89880;
+}
+
+.header__icons{
     height: 50px;
     width: 70px;
     display: flex;
@@ -47,7 +52,7 @@ img{
     object-fit: cover;
 }
 
-#hi{
+#greeting__hi{
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -55,7 +60,7 @@ img{
     padding-top: 20px;
 }
 
-#nameIntro{
+#greeting__nameIntro{
     font-family: 'Montserrat', sans-serif;
     font-size: 37px;
     font-weight: bold;
@@ -70,7 +75,7 @@ img{
     margin-bottom: 40px;
 }
 
-.numbers{
+.statistics__numbers{
     font-family: 'Fredoka One', cursive;
     font-family: 'Montserrat', sans-serif;
     color: #F89880;
@@ -78,7 +83,7 @@ img{
     font-weight: bold;
 }
 
-.details{
+.statistics__details{
     font-family: 'Montserrat', sans-serif;
     color: darkgrey;
     font-size: 17px;
@@ -103,7 +108,7 @@ img{
     margin-bottom: 50px;
 }
 
-.dark{
+.body__dark{
     background-color: #000;
     color: white;
     font-family: 'Poppins', sans-serif;
