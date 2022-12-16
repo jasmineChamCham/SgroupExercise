@@ -11,10 +11,13 @@ body{
 .header{
     padding-top: 70px;
     width: 100%;
-    height: 120px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
+    position: -webkit-sticky; /* Safari */
     position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 .subheader{
