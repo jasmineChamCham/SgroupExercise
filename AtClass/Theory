@@ -1,0 +1,41 @@
+/* BEM
+navbar
+important > inline > id > class > tag
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+background-clips
+background-size
+background-image
+background-color
+background-shadow
+
+overflow property
+float property
+title property
+box-sizing: border-box;
+
+Masonry Layout ~ Pinterest Layout
+
+// TEXT TRUNCATE
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// text truncate multiline
+.text-ellipsis--2{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  // Addition lines for 2 line or multiline ellipsis
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2; // number of lines we want to set info
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+============
+transform -> rotate, translate, scale, skew
+transition -> property
+animation */

@@ -1,0 +1,21 @@
+.cat{
+    height: 70px;
+    width: 70px;
+
+}
+
+.c1{
+    background-attachment: scroll;
+    background-position: 25% 25%;
+}
+
+.sea{
+    height: 1000px;
+    width: 1000px;
+}
+
+.c2{
+    background-attachment: fixed;
+    background-position: 50% 50%;
+
+}
