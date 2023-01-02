@@ -1,4 +1,4 @@
-/* BEM
+BEM
 navbar
 important > inline > id > class > tag
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
@@ -38,4 +38,37 @@ Masonry Layout ~ Pinterest Layout
 ============
 transform -> rotate, translate, scale, skew
 transition -> property
-animation */
+animation 
+
+==================
+Javascript
+cdn
+use strict
+variables -> let, var, const
+let được khai báo sẽ có scope là block scoped chứ không phải globally hay locally scoped
+
+var greeting = "hey hi";
+var times = 4;
+if (times > 3) {
+  var greeting = "say Hello instead"; 
+}
+console.log(greeting); //"say Hello instead"
+=======================
+let greeting = "say Hi";
+let times = 4;
+
+if (times > 3) {
+    let hello = "say Hello instead";
+    console.log(hello); // "say Hello instead"
+}
+console.log(hello); // hello is not defined
+============================================
+
+typescript
+scope of Javascript
+??
+truthy and falsy
+
+hoisting
+phân biệt var và let
+
