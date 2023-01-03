@@ -12,11 +12,8 @@
     color: #fff;
     padding-left: 190px;
     padding-right: 190px;
+    padding-bottom: 52px;
 }
-
-/* .header-content{
-    
-} */
 
 li{
     font-weight: bold;
@@ -90,11 +87,6 @@ li{
 .navbar .sub-menu .sub-menu--hover .fa-caret-right {
     float: right;
 }
-
-/* .sub-menu--hover{
-    display: flex;
-
-} */
 
 .sub-menu-item{
     display: none;
@@ -171,6 +163,7 @@ li{
 .body{
     padding-left: 190px;
     padding-right: 190px;
+    background-color: #D3D3D3;
 }
 
 .box--number{
@@ -195,7 +188,7 @@ li{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 52px;
+    padding-top: 10px;
     margin-bottom: 52px;
 }
 
@@ -206,6 +199,7 @@ li{
     border-style: outset;
     font-weight: bold;
     display: flex;
+    background-color: #fdfeff;
 }
 
 .fa-lightbulb{
@@ -244,6 +238,51 @@ li{
     flex-direction: column;
     align-items: center;
 }
+
+.fa-layer-group{
+    color: #45b6fe;
+}
+
+.fa-comment-dots{
+    color: orangered;
+}
+
+.fa-lock{
+    color: #af69ee;
+}
+
+.feature-box__logo{
+    font-size: 30px;
+}
+
+.feature-box{
+    background-color: #fdfeff;
+    width: 25%;
+    padding: 48px;
+    border-style: ridge;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-box__info{
+    text-align: center;
+}
+
+.feature-box__title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
 
 
 
