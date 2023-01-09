@@ -82,7 +82,7 @@ function caesarCypher(text, step) {
 	}
 	return res;
 }
-const name = "Hoang NhanZ"
+const name = "Hoang Nhan"
 const cypherText = caesarCypher(name, 3)
 console.log(cypherText) // Krdqj Qkdq
 
@@ -165,12 +165,9 @@ console.log(getMonthName(4)) // April
 
 
 // 8. Viết một hàm JavaScript tìm từ dài nhất trong chuỗi
+
 function longestWord(str) {
-    console.log(str);
-    console.log(str.length);
-    // var newStr = str.replace(',' , '');
-    // console.log(newStr);
-	let s = str.split(" ");
+	let s = str.split(/[^a-zA-Z]/);
 	console.log(s);
     let max= "";
 	for (let i=0 ; i < s.length ; i++) {
@@ -185,24 +182,29 @@ function longestWord(str) {
 let str = "Little darlin', it's been a loooooong, cold, lonely winter"
 longestWord(str); // loooooong
 
-
 // 9. Viết hàm tính tổng các chữ số khác 5 của một số nguyên tố (lớn) sử dụng hàm reduce và filter
 function snt(number){
-	for (let i = 2; i < Math.sqrt(number); i++) {
-		if (number % i == 0) return false;
+	for (let i = 2; i < number - 1n; i++) {
+		if (number % BigInt(i) == 0) return false;
 	}
 	return true;
 }
 
 function sum (number) {
-	if (snt(number) == false) return "error";
-	else {
+    let sum = 0;
+// 	if (snt(number) == false) return "error";
+//	else
+	{
 		let numberAsString = number.toString();
 		let arr = Array.from(numberAsString);
-		console.log(arr);
+		for (let i=0; i<arr.length ; i++){
+		    if (arr[i] != 5){
+		        sum += Number(arr[i]);
+		    }
+		}
+		return sum;
 	}
 }
-  
 console.log(sum(1231312321378127391237219312n)) ;// 90
 console.log(sum(99999999999999999999999999999n));// 261
 console.log(sum(12345678908765432123456555566n));// 98
