@@ -72,3 +72,67 @@ truthy and falsy
 hoisting
 phân biệt var và let
 
+=======================
+sass/scss
+lazy loading
+clip path
+shape divider
+css layout
+paralax
+caroussel
+
+=======================
+string -> splice : remove(2 parameters)/add(more than 2 parameters)
+Object
+Prototype
+arr
+for in <> for of
+
+arr = [1,2,3,4]
+function print(item){
+  console.log(item)
+}
+arr.forEach(print) // 1234
+
+========
+map, filter, reduce
+arr =[4,2,3,4]
+
+function pow2(item){
+  return item ** 2;
+}
+let new_arr = arr.map(pow2);
+
+function check (item){
+  return item%2 == 0;
+}
+let new_arr = arr.filter(check);
+
+function sum (a, b){
+  return a+b;
+}
+let new_arr = arr.reduce(sum);
+
+=================
+function Student(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+let num = prompt("Nhap so luong sinh vien");
+console.log(num);
+
+function get_students(num){
+    let arr = [];
+    for (let i=0; i<num; i++){
+        let name = prompt("Nhap ten sinh vien ");
+        let age = prompt("Nhap tuoi sinh vien ");
+        let s=new Student(name, age);
+        arr.push(s);
+    }
+    return arr;
+}
+
+console.log(get_students(num))
+
+

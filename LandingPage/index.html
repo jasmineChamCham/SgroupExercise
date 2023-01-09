@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta title="sApp">
+<title>sApp</title>
 <link rel="icon" type="image/png" sizes="16x16" href="assets/image/logo.png">
 <script src="https://kit.fontawesome.com/12d75fff14.js" crossorigin="anonymous"></script>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -9,8 +11,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Inter:wght@100;200;300;600&family=Montserrat&display=swap" rel="stylesheet">
+
+<script>
+    function sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+            currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+    }
+
+    function increaseNumber(){
+        var i=0;
+        
+        while (i <= 10){
+            document.getElementById("box-User").innerHTML = i + "M"; 
+            var el = document.getElementById("box-User").innerHTML;
+            // alert(el); 
+            console.log(i);
+            sleep(1000);
+            i++;
+            // alert(document.getElementById("box-User").value);
+        }        
+    }
+</script>
 </head>
-<body>
+<body onload="increaseNumber()">
     <div class="header">
         <div class="header-content">
             <div class="header-content-menu">
@@ -114,18 +140,19 @@
         </div>
         
     </div>
+    
     <div class="body">
         <div class="statistics">
             <div class="box">
-                <div class="box--number">10M</div>
+                <div class="box--number" id="box-User">10M</div> 
                 <div class="box--unit">Users</div>
             </div>
             <div class="box">
-                <div class="box--number">23K</div>
+                <div class="box--number" id="box-Download">23K</div>
                 <div class="box--unit">Download</div>
             </div>        
             <div class="box">
-                <div class="box--number">9M</div>
+                <div class="box--number" id="box-Developers">9M</div>
                 <div class="box--unit">Developers</div>
             </div>
             <div class="box">
