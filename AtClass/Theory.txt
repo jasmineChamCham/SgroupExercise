@@ -75,8 +75,7 @@ phân biệt var và let
 =======================
 sass/scss
 lazy loading
-clip path
-shape divider
+clip path, shape divider
 css layout
 paralax
 caroussel
@@ -135,4 +134,15 @@ function get_students(num){
 
 console.log(get_students(num))
 
+====================================
+callback
+object Prototype
+settimeout(func, miliseconds);
+asynchronous
+promise
+event loop, stack
 
+document.getElement... => innerHTML # innerText
+classList
+css : background-color => document.getElement... .backgroundColor
+document.querySelector()
