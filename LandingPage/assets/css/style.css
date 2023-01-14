@@ -185,20 +185,32 @@ li {
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
     color: #565656;
+    padding: 30px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 25%;
+    box-shadow: #565656 0.5px 0px 0px 0px;
+}
+
+.box-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
 }
 
 .statistics {
     margin-top: 20px;
-    padding-right: 350px;
-    padding-left: 350px;
+    padding-right: 300px;
+    padding-left: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 10px;
     margin-bottom: 52px;
 }
