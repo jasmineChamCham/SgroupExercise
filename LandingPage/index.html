@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta title="sApp">
     <title>sApp - App Landing Page | Jasmine</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/logo-purple.png">
     <script src="https://kit.fontawesome.com/12d75fff14.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/shape-divider.css">
+    <link rel="stylesheet" href="./assets/css/svg-style.css">
+    <link rel="stylesheet" href="./assets/css/animation-work-next.css">
+    <link rel="stylesheet" href="./assets/css/animation-phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
     <div class="header">
         <div class="header-content-menu">
             <div class="logo">
-                <a href="index.html"><img src="assets/image/logo.png" alt="logo image"></a>
+                <a href="index.html"><img src="assets/image/logo-white.png" alt="logo image"></a>
             </div>
             <div class="navbar">
                 <ul>
@@ -129,17 +131,32 @@
                 <img src="assets/image/welcome-mockup.png" alt="app on phone">
             </div>
 
+            <div class="shape-bottom">
+                <svg viewBox="0 0 1920 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg replaced-svg">
+                    <title>sApp Shape</title>
+                    <desc>Created with Sketch</desc>
+                    <defs></defs>
+                    <g id="sApp-Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#FFFFFF">
+                            <path d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395" id="sApp-v1.0"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
         </div>
 
+        
     </div>
 
-    <div class="custom-shape-divider-top-1673608862">
+    <!-- <div class="custom-shape-divider-top-1673608862">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
                 d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                 class="shape-fill"></path>
         </svg>
-    </div>
+    </div> -->
+
+
 
     <div class="body">
         <div class="statistics">
@@ -281,21 +298,23 @@
                 <div class="works-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati
                     dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</div>
                 <div class="works-frame">
-                    <div class="works-box">
+                    <div class="works-box" id="works-box-1">
+                        <div class="works-next" id="works-next-1">&#x276F;</div>
                         <div class="works-icon"><i class="fa-solid fa-download"></i></div>
                         <div class="works-box-title">Install the App</div>
                         <div class="works-box-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
                             saepe, voluptates quis enim incidunt obcaecati?</div>
                     </div>
 
-                    <div class="works-box">
+                    <div class="works-box" id="works-box-2">
+                        <div class="works-next" id="works-next-2">&#x276F;</div>
                         <div class="works-icon"><i class="fa-solid fa-sliders"></i></div>
                         <div class="works-box-title">Setup your profile</div>
                         <div class="works-box-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
                             saepe, voluptates quis enim incidunt obcaecati?</div>
                     </div>
 
-                    <div class="works-box">
+                    <div class="works-box" id="works-box-3">
                         <div class="works-icon"><i class="fa-solid fa-gear"></i></div>
                         <div class="works-box-title">Enjoy the features!</div>
                         <div class="works-box-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
@@ -565,12 +584,11 @@
                     <img src="assets/image/cus-3.png" alt="expert-3">
                 </div>
                 <div class="expert-box">
-                    <img src="assets/image/cus-4.jpg" alt="expert-4">
+                    <img src="assets/image/cus-4.png" alt="expert-4">
                 </div>
             </div>
 
             <div class="available-parallax">
-                <!-- <img src="https://theme-land.com/sapp/demo/assets/img/bg/download-bg.jpg" alt="available-parallax background"> -->
                 <div class="available-section">
                     <div class="available-caption">sApp is available for all devices</div>
                     <div class="available-lorem">sApp is available for all devices, consectetur adipisicing elit. Itaque
@@ -596,57 +614,57 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="tuned">
-        <div class="section">
-            <div class="general-title">Stay tuned</div>
-            <h2></h2>
-            <div class="interface-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati
-                dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</div>
-        </div>
-
-        <div class="tuned-frame">
-            <div class="tuned-content">
-                <div class="tuned-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                    in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
-                <div class="tuned-list">
-                    <div class="tuned-box">
-                        <div class="tuned-icon"><i class="fa-solid fa-house"></i></div>
-                        <div class="tuned-detail">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002
+        <div class="tuned">
+            <div class="section">
+                <div class="general-title">Stay tuned</div>
+                <h2></h2>
+                <div class="interface-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati
+                    dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</div>
+            </div>
+    
+            <div class="tuned-frame">
+                <div class="tuned-content">
+                    <div class="tuned-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                    <div class="tuned-list">
+                        <div class="tuned-box">
+                            <div class="tuned-icon"><i class="fa-solid fa-house"></i></div>
+                            <div class="tuned-detail">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002
+                            </div>
+                        </div>
+    
+                        <div class="tuned-box">
+                            <div class="tuned-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="tuned-detail">+1 230 456 789-012 345 6789</div>
+                        </div>
+    
+                        <div class="tuned-box">
+                            <div class="tuned-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="tuned-detail">exampledomain@domain.com</div>
                         </div>
                     </div>
-
-                    <div class="tuned-box">
-                        <div class="tuned-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="tuned-detail">+1 230 456 789-012 345 6789</div>
-                    </div>
-
-                    <div class="tuned-box">
-                        <div class="tuned-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="tuned-detail">exampledomain@domain.com</div>
-                    </div>
+                </div>
+    
+                <div class="tuned-enter-info">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                    <button>
+                        <span><i class="fa-solid fa-paper-plane"></i></span> Send Message
+                    </button>
                 </div>
             </div>
-
-            <div class="tuned-enter-info">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea cols="30" rows="5" placeholder="Message"></textarea>
-                <button>
-                    <span><i class="fa-solid fa-paper-plane"></i></span> Send Message
-                </button>
-            </div>
+    
         </div>
-
     </div>
 
+    <div class="footer-height"></div>
     <div class="footer">
         <div class="footer-section">
             <div class="footer-segment">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/image/logo.png" alt="logo image"></a>
+                    <a href="index.html"><img src="assets/image/logo-purple.png" alt="logo image"></a>
                 </div>
                 <div class="footer-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit
                     totam vel laboriosam vitae.</div>
