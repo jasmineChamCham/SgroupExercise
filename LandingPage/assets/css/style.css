@@ -709,7 +709,7 @@ h2 {
 
 .customer-box{
     width: 30%;
-    box-shadow: #000000 0px 1px 2px 0px;
+    box-shadow: gray 0px 1px 3px 0px;
     /* border: .5px solid #565656; */
     color: #565656;
 }
@@ -901,14 +901,66 @@ h2 {
     background-color: #fff;
 }
 
+.expert-box-detail{
+    color: white;
+    background: rgba(102,16,254,0.6) no-repeat scroll center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center!important;
+    position: absolute;
+    top: 0;
+}
+
+.expert-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.expert-job{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.expert-media{
+    padding: 5px;
+    padding-top: 10px;
+}
+
 .expert-box{
     width: 80%;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+    aspect-ratio: 1/1;
+    overflow: hidden!important;
+    border-radius: 12px;
+    position: relative;
 }
 
 .expert-box > img{
     width: 100%;
     height: 100%;
+    border-radius: 12px;
+    z-index: 0;
+}
+
+.expert-box:hover img{
+    animation-name: expert-img-ani;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    border-radius: 12px;
+}
+
+.expert-box:hover .expert-box-detail{
+    animation-name: expert-box-detail-ani;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
     border-radius: 12px;
 }
 
@@ -1083,20 +1135,6 @@ h2 {
     margin-right: 5px;
 }
 
-/* .footer-height:in-range + .footer{
-    display: block;
-    padding: 174px 190px 0px 190px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    visibility: unset;
-    position: fixed;
-    bottom:0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-color: #55acee;
-} */
-
 .footer{
     display: block;
     padding: 174px 190px 0px 190px;
@@ -1113,6 +1151,7 @@ h2 {
 
 .footer-height{
     height: 582px;
+    /* z-index: 0; */
 }
 
 .footer-lorem{
