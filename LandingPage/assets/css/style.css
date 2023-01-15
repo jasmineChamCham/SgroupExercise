@@ -13,13 +13,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 
 .header {
     position: relative;
     height: max-content;
-    z-index: 1;
     background: rgba(102,16,254,0.8) url('https://theme-land.com/sapp/demo/assets/img/bg/welcome-bg.jpg') 
         no-repeat scroll center center/cover;
     color: #fff;
@@ -192,7 +190,8 @@ li {
 /* body */
 
 .body{
-    z-index: 1;
+    background-color: #fff;
+
 }
 
 .box--number {
@@ -237,7 +236,6 @@ li {
     justify-content: space-evenly;
     padding-top: 10px;
     margin-bottom: 150px;
-    z-index: 1;
 }
 
 .lightbulb-box {
@@ -650,9 +648,10 @@ h2 {
     justify-content: center;
 }
 
-.list-radios input{
+.list-radios > input{
     margin-right: 5px;
     margin-top: 10px;
+    visibility: hidden;
 }
 
 .carousel ul{
@@ -747,6 +746,7 @@ h2 {
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
+    background: #fff;
 }
 
 .unlock-box img{
@@ -854,7 +854,6 @@ h2 {
 
 .question{
     background-color: #fff;
-    z-index: 1;
 }
 
 .question-caption{
@@ -1140,18 +1139,15 @@ h2 {
     padding: 174px 190px 0px 190px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    visibility: hidden;
     position: fixed;
     bottom:0;
     left: 0;
     right: 0;
-    z-index: -1;
-    background-color: #55acee;
+    z-index: -2;
 }
 
 .footer-height{
     height: 582px;
-    /* z-index: 0; */
 }
 
 .footer-lorem{
@@ -1217,7 +1213,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 80px;
-    z-index: -1;
 }
 
 .copyright{
@@ -1227,5 +1222,4 @@ h2 {
     align-items: center;
     padding: 30px 0px;
     color: #565656;
-    z-index: -1;
 }
