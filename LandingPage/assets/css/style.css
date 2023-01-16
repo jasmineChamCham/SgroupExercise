@@ -43,6 +43,30 @@ li {
     z-index: -1;
 }
 
+.menu-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -5;
+    padding-left: 190px;
+    padding-right: 190px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    color: #000;
+}
+
+.body:hover  + .menu-fixed, .menu-fixed:hover{
+    animation-name: menu-fixed-ani;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
 .logo {
     z-index: 1;
     width: max-content;
@@ -1092,7 +1116,6 @@ h2 {
     font-size: 13px;
     line-height: 21px;
     padding: 13px 15px;
-    /* box-shadow: #000000 0px 2px 2px 0px; */
     margin-bottom: 20px;
     border: none;
 }
@@ -1104,7 +1127,6 @@ h2 {
     font-size: 13px;
     line-height: 21px;
     padding: 15px;
-    /* box-shadow: #000000 0px 5px 10px 0px; */
     margin-bottom: 25px;
     border: none;
 }

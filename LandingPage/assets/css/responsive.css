@@ -3,6 +3,12 @@
         font-size: 9px;
     }
 
+    .menu-fixed {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
     .header-content-menu {
         padding-left: 10px;
         padding-right: 10px;
